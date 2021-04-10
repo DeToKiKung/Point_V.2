@@ -1,0 +1,8 @@
+name: point
+main: qwe\zxc
+author: DeTokikung
+version: +dsdsdsd1f54f54
+api: 3.0.0
+commands:
+ point:
+  description: เปิด UI point
