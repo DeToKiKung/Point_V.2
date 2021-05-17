@@ -380,10 +380,7 @@ class zxc extends PluginBase implements Listener
     public function PlayerChatEvent($name)
     {
         $data = new Config($this->getDataFolder() . "data/" . strtolower($name) . ".yml", Config::YAML);
-        $data->exists("point") && $data->exists("point");
         return $data->get("point");
-        $data->setAll(array("point" => 0, "point" => 0));
-        $data->save();
     }
 
     public function onJoin(PlayerJoinEvent $e)
