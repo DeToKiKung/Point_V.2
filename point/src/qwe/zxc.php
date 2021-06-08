@@ -377,7 +377,7 @@ class zxc extends PluginBase implements Listener
         $form->sendToPlayer($sender);
     }
 
-    public function PlayerChatEvent($name)
+    public function getPoint($name)
     {
         $data = new Config($this->getDataFolder() . "data/" . strtolower($name) . ".yml", Config::YAML);
         return $data->get("point");
